@@ -1,0 +1,430 @@
+.pdf-view {
+    width: 1120px;
+    padding-top: 20px;
+}
+
+.title {
+    min-width: fit-content;
+    text-align: center;
+    padding: 10px 10px 0;
+}
+
+.pdf-view .pdf-title-aip {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+    background-color: #E8E8E8!important;
+    -webkit-print-color-adjust: exact
+}
+
+.pdf-subtitles {
+    text-align: center;
+}
+
+.pdf-header-bar {
+    background-image: url(../../Content/img/template_header.png);
+    float: right;
+    height: 20px;
+    width: 1052px;
+    margin-top: -25px;
+    -webkit-print-color-adjust: exact;
+}
+
+.pdf-legend {
+    display: grid;
+    position: absolute;
+    margin-top: 22px;
+    float: left;
+    background-size: 100% 100%;
+    width: 200px;
+    margin-left: 90px;
+    -webkit-print-color-adjust: exact;
+}
+
+.pdf-legend-aip {
+    background-size: 100% 100%;
+    -webkit-print-color-adjust: exact;
+    background-color: #E8E8E8;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 2px solid #cacaca;
+}
+
+.legend-title {
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.pdf-legend span {
+    margin-bottom: 1px;
+}
+
+.legend-text {
+    position: sticky;
+    margin-left: 15px;
+    margin-top: -15px;
+    height: 1px;
+    font-size: 12px;
+}
+
+.legend-yellowdot {
+    height: 12px;
+    width: 12px;
+    background-color: #ffbf00;
+    border-radius: 6px;
+}
+
+.legend-greendot {
+    height: 12px;
+    width: 12px;
+    background-color: #395724;
+    border-radius: 6px;
+}
+
+.legend-reddot {
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    -webkit-print-color-adjust: exact;
+}
+
+.margin-black {
+    background-color: black;
+    width: 50px;
+    height: 105px;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 20px;
+    -webkit-print-color-adjust: exact;
+}
+
+.pdf-logo {
+    background-image: url(../../Content/img/template_logo_modec.png);
+    background-size: 100% 100%;
+    height: 40px;
+    width: 165px;
+    display: inline-block;
+    position: absolute;
+    margin:10px;
+    -webkit-print-color-adjust: exact ;
+}
+
+.pdf-header .title {
+    float: left;
+    margin-left: 140px;
+    width: 650px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 1.25em;
+    margin-bottom: auto;
+    padding-top: 5px;    
+}
+.title h2 {
+    font-size: 1.1em;
+    margin-bottom: auto;
+    padding-top: 5px;
+}
+.title h4 {
+    font-size: 0.8em;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-top: 5px;    
+}
+
+/*.pdf-header {
+    position: absolute;
+    background-image: url(../../Content/img/template_legend.png);
+    margin-top: 10px;
+    float: left;
+    background-size: 100% 100%;
+    height: 89px;
+    width: 295px;
+    margin-left: 90px;
+    -webkit-print-color-adjust: exact;
+}*/
+
+.pdf-content {
+    /*margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 20px;*/
+    min-height: 550px;
+    padding-bottom: 10px;
+}
+
+.pdf-content table.table-condensed tr th {
+    font-weight: 600;
+}
+
+.pdf-footer {
+    background-image: url(../../Content/img/template_footer.png);
+    background-size: 100% 100%;
+    -webkit-print-color-adjust: exact;
+    width: 100%;
+    padding: 3px;
+    background: #0066B1;
+}
+
+.pdf-footer .title {
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    margin-top: auto;
+    padding-top: 0;
+}
+
+.pdf-footer-logo {
+    background-image: url(../../Content/img/template_logo_modec.png);
+    float: right;
+    height: 27px;
+    width: 115px;
+    background-size: 100% 100%;
+    margin-right: 20px;
+    margin-top: -30px;
+    -webkit-print-color-adjust: exact;
+}
+
+.grafico-impressao {
+    float: right;
+    width: 1000px;
+}
+
+table td,
+table th {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+}
+
+table > thead > tr {
+    border-top: none;
+    border-bottom: none;
+}
+
+    table > thead > tr > th {
+        border-top: solid 1px rgba(235,235,235, .5);
+        border-bottom: solid 1px rgba(235,235,235, .5);
+        background-color: rgb(231,232,233);
+        -webkit-print-color-adjust: exact;
+    }
+
+    table > tbody > tr > td{
+        white-space: normal; 
+    }        
+
+table > tbody > tr.odd {
+    background-color: #fff;
+    -webkit-print-color-adjust: exact;
+}
+table > tbody > tr{
+    border: 1px solid #e7e8e9;
+}
+table > tbody > tr:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+    -webkit-print-color-adjust: exact;
+}
+/*table > tbody > tr.even{
+    background-color: rgb(197, 197, 197);
+    -webkit-print-color-adjust: exact;
+}*/
+
+table > tbody > td i.fa {
+    padding: 0 3px;
+}
+
+col{
+    display: table-column;
+}
+
+col.performance {
+    width: 115px;
+}
+
+col.weight {
+    width: 42px;
+}
+col.revisedweight {
+    width: 45px;
+}
+
+col.goaldetails, col.goaldescription {
+    width:150px;
+}
+col.metrictype {
+    width:63px;
+}
+col.revisedscore {
+    width: 50px;
+}
+
+col.score {
+    width: 68px;
+}
+col.finalscore{
+    width: 63px;
+}
+col.results,
+col.finalscorerevised,
+col.weightedresultrevised,
+col.weightedresultrevised,
+col.weightedresult {
+    width:55px;
+}
+
+table tbody tr.pdf-footer {
+    background-color: white;
+    border-top: 3px solid #e7e8e9;
+    -webkit-print-color-adjust: exact;
+}
+tr.pdf-footer td:first-child {
+    text-align: right!important;
+}
+
+tabela-principal {
+    padding: 0px 20px 20px 20px;
+}
+
+.tabela-principal table > thead > tr > th:first-child {
+    width: 80px;
+}
+
+.tabelaPrincipal-header-tr {
+    display: none;
+}
+
+.tabelaPrincipal-tr {
+    border-top: 1px solid #55718d;
+}
+
+    .tabelaPrincipal-tr:last-child {
+        border-bottom: 1px solid #55718d;
+    }
+
+.tabelaPrincipal-tr-odd {
+    border-bottom: 1px solid #55718d;
+    -webkit-print-color-adjust: exact
+}
+
+    .tabelaPrincipal-tr td:first-child, .tabelaPrincipal-tr-odd td:first-child {
+        text-align: left;
+        width: 120px;
+    }
+
+.infos-dot {
+    height: 6px;
+    width: 6px;
+    margin: 10px 7px;
+    background-color: #939598;
+    border-radius: 3px;
+    -webkit-print-color-adjust: exact
+}
+
+/* SIMULANDO BOOTSTRAP*/
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+    padding: 5px;
+    font-size: 11px;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+table > tbody > tr > td table tr{
+    border: 0px;
+}
+table > tbody > tr > td table tr td{
+    white-space:nowrap;
+    text-align: right;
+}
+
+
+/*h3, .h3 {
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+*/
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+/*FIM SIMULANDO BOOTSTRAP*/
+
+.barra-acao {
+    margin-right: 20px;
+    height: 40px;
+    margin-left: 149px;
+    margin-top: -5px;
+}
+
+.towards-kpi img {
+    float: left;
+    margin-top: 7px;
+}
+
+/* param resolver bug de header duplicado no chrome na impress�o*/
+thead {
+    display: table-row-group;
+}
+
+
+.farol-vermelho,
+.texto-vermelho-farol,
+.texto-vermelho {
+    color: rgb(255,0,0) !important;
+}
+
+.farol-amarelo,
+.texto-amarelo-farol,
+.texto-amarelo {
+    color: rgb(255,192,0) !important;
+}
+
+.farol-verde,
+.texto-verde-farol,
+.texto-verde {
+    color: rgb(0,176,80) !important;
+}
+
+/*.farol-azul {
+    color: #203d57;
+}
+
+CARD 288
+Ap�s finalizado, resultado do m�s deve apresentar farol cinza ao inv�s do check de conclu�do - 
+est� usando o �cone ? ao inv�s da bolinha. precisa ser corrigido (haviamos falado disso pessoalmente na quinta).
+
+*/
+
+.farol-azul,
+.farol-cinza {
+    color: rgb(160,160,160) !important;
+}
+
+/*
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .title {
+        max-width: 20% !important;
+    }
+}*/

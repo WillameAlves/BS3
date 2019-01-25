@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/selectize.bootstrap3.css" />
+    <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="css/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+        <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+        <script src="js/lib/jquery/jquery-1.11.3.min.js"></script>
+        <script src="js/lib/jquery/jquery-ui.min.js"></script>
+        <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--script src="js/tabs.js"></script>-->
+        <!--script src="js/lib/selectize.js"></script-->
+
+        <!-- The real deal -->
+        <script src="js/lib/tag-it.js"></script>
+
+ <script>
+     $(function(){
+        // var sampleTags = ['c++', 'java', 'php', 'coldfusion', 'javascript', 'asp', 'ruby', 'python', 'c', 'scala', 'groovy', 'haskell', 'perl', 'erlang', 'apl', 'cobol', 'go', 'lua'];
+
+         // singleFieldTags2 is an INPUT element, rather than a UL as in the other 
+         // examples, so it automatically defaults to singleField.
+         $('#myTags').tagit();
+
+         
+     });
+ </script>
+    
+
+  </head>
+  <body>
+        <header class="container-fluid">
+                <div class="container"></div>
+        </header>
+        <main class="container">
+
+			
+			<label class="radio-inline"><input type="radio" name="optradio" onclick="clinicas()" checked>Option 1</label>
+			<label class="radio-inline"><input type="radio" name="optradio" onclick="convenios()">Option 2</label>
+            <!--ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#clinicas-contents">Menu 1</a></li>
+                <li><a data-toggle="tab" href="#convenios-contents">Menu 2</a></li>
+            </ul-->
+            
+            <div class="tab-content row" style="border:1px solid #cacaca; display:block; padding:20px; ">
+                <div id="clinicas-contents" class="tab-pane col-lg-12 fade in active">
+
+                    <h3>Clínicas</h3>
+                        <div class="col-lg-5 clinicas">
+                                <label>Clínica(s)</label>
+                                <ul id="myTags">
+                                                <!-- Existing list items will be pre-added to the tags -->
+                                                <li></li>
+                                </ul>
+                        </div> 
+                        <div class="col-lg-5 convenios">
+                                <label>Convênio(s)</label>
+                                <ul id="22myTags">
+                                                <!-- Existing list items will be pre-added to the tags -->
+                                                <li>Tag1</li>
+                                                <li>Tag2</li>
+                                </ul>
+                                
+                        </div>
+                        <div class="col-lg-2">
+                            
+                        </div>    
+                </div>
+                <!--div id="novoscampos" class="col-lg-12"></div>
+                <div id="convenios-contents" class="tab-pane col-lg-12 fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div-->
+                <a id="addbutton" href="#" style="display:none;">+ Adicionar</a>
+            </div>
+
+
+               
+
+        </main>
+        <footer class="container-fluid">
+
+        </footer>
+
+
+
+
+  </body>
+</html>
