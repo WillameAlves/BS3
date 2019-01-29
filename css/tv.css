@@ -134,20 +134,52 @@
     box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.26);
 }
 
-.item span.settings{
-    padding: 2px 4px;
+.item .settings a {
+    color: inherit;
+}
+.item span.settings .dropleft{
+    padding: 0px 4px;
     margin: 10px;
-    width: 30px;
+    width: 25px;
     position: absolute;
     right: 10px;
-    color: white;
+    color: #ababab;
+    border: 1px solid rgba(0, 0, 0, .15);
     text-transform: uppercase;
-    font-weight: bold;
-    opacity:0.5;
+    opacity: 0.5;
+    z-index: 99;
+    text-align: center;
 }
-.item span.settings:hover{
-    background: #FC7B19;
+.item span.settings .dropleft:hover{
+    background: white;
+    color:#545454;
+    opacity:0.8;
+}
+
+.item span.settings .dropleft.open{
+    background: white;
+    color:#545454;
     opacity:1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.item span.settings .dropleft i {
+    width: 100%;
+    font-size: 1.25em;
+    line-height: 1.4em;
+}
+
+.dropleft > .dropdown-menu{
+    right: 100%;
+    top: 0;
+    left: auto;
+    min-width: auto;
+    padding: 5px;
+    text-transform: initial;
+}
+
+.dropleft .dropdown-item {
+    white-space: nowrap;
 }
 
 .item .info{
@@ -156,6 +188,7 @@
     padding: 10px;
     display: flex;
     justify-items: center;
+    flex-wrap: wrap;
     border: 1px solid #cacaca;
     -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.26);
@@ -179,6 +212,21 @@
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+.item .info .dates{
+    display: flex;
+    flex: 1;
+    margin: 10px 0;
+    padding: 2px 0px 9px 0px;
+    font-size: 12px;
+}
+
+.dates .expire{
+    margin-left: auto;
+    padding: 3px;
+    border: 1px solid #d3d3d3;
+    background: #e7e7e7;
+}
+
 
 /***** Container de navegação dos canais****/
 #navega-canais{
@@ -315,7 +363,7 @@
 
 /* actions de ação */
 .round{
-    border-radius:3px;
+    border-radius:50%;
 }
 
 
