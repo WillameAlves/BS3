@@ -100,6 +100,16 @@
     padding-right: 5px;
     font-size:18px;
 }
+
+.carregar-midia:before {
+    content: "\f093";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline-block;
+    padding-right: 5px;
+    font-size:18px;
+}
+
 .content .list{
     margin:0;
     padding:0;
@@ -253,6 +263,10 @@ span.dates:hover {
     transition:bottom 0.3s linear 0s;
 }
 
+.item.pending .expire{
+	display:none;
+}
+
 /***** Container de navegação dos canais****/
 #navega-canais{
     background: #e7e7e7;
@@ -367,9 +381,7 @@ span.dates:hover {
 
 .container {
     padding-right: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    padding-left: 0px;    
 }
 
 #ms-dnd-dropbox{
